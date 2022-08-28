@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color: #0f172a;
+        --secondary-color: #f2542d;
+      }
+
+      body {
+        background-color: var(--primary-color);
+        padding: 0rem 5rem;
+        margin: 0;
+        color: white;
+      }
+
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        font-family: "Ringside Regular Bold";
+        src: url("RingsideRegular-Bold.woff2") format("woff2");
+      }
+
+      html {
+        font-size: 100%;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Ringside Regular Bold", serif;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .hero {
+        margin: 1vh 0vh;
+      }
+      .image {
+        height: 90vh;
+        margin-top: 1.5rem;
+        display: block;
+        object-fit: cover;
+        border-radius: 1%;
+        background: hsla(222, 47%, 11%, 1);
+
+        background: linear-gradient(
+          90deg,
+          hsla(222, 47%, 11%, 1) 0%,
+          hsla(12, 88%, 56%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(222, 47%, 11%, 1) 0%,
+          hsla(12, 88%, 56%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(222, 47%, 11%, 1) 0%,
+          hsla(12, 88%, 56%, 1) 100%
+        );
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F172A", endColorstr="#F2542D", GradientType=1 );
+      }
+
+      .bio {
+        margin: auto 0 auto 2rem;
+        font-size: 1.5rem;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #name,
+      #email {
+        color: var(--primary-color);
+        -webkit-text-stroke: 1px white;
+      }
+
+      #nim,
+      #prodi {
+        color: var(--secondary-color);
+      }
+
+      #prodi:hover {
+        color: var(--primary-color);
+        -webkit-text-stroke: 0.5px var(--secondary-color);
+      }
+
+      #email:hover {
+        color: var(--primary-color);
+        -webkit-text-stroke: 1px var(--secondary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero" style="display: flex">
+      <div class="img-container">
+        <img src="photo.png" alt="" class="image" />
+      </div>
+      <div class="bio">
+        <h1 id="name">Muhammad Erwin<br />Arif</h1>
+        <h1 id="nim">H071211059</h1>
+        <h1 id="ttl">Kendari, 31 July 2001</h1>
+        <h1>
+          <a id="prodi" href="http://is.sci.unhas.ac.id" target="_blank">
+            Information System Student at Hasanuddin University
+          </a>
+        </h1>
+        <h1>
+          <a id="email" href="mailto:muherwinarif31@gmail.com">
+            muherwinarif31 <br />@gmail.com
+          </a>
+        </h1>
+      </div>
+    </div>
+  </body>
+</html>
